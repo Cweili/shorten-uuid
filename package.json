@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Shorten UUID to a string of length 24 witch applicable to the URL and WeChat QR code.",
   "keywords": [
-    "throttle",
-    "asynchronous",
-    "async",
-    "await",
-    "promise",
-    "rate",
-    "limit",
-    "cache",
-    "request"
+    "id",
+    "uuid",
+    "short",
+    "shorten",
+    "shorter",
+    "url",
+    "qrcode",
+    "qr",
+    "encode",
+    "decode"
   ],
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   },
   "main": "dist/shorten-uuid.js",
   "module": "dist/shorten-uuid.esm.js",
+  "unpkg": "dist/shorten-uuid.umd.js",
+  "jsdelivr": "dist/shorten-uuid.umd.js",
   "types": "dist/shorten-uuid.d.ts",
   "sideEffects": false,
   "scripts": {
