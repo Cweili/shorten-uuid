@@ -1,6 +1,6 @@
-import shortenUUID from '../src/shorten-uuid.ts';
+import shortenUuid from '../src/shorten-uuid.ts';
 
-const { encode, decode } = shortenUUID();
+const { encode, decode } = shortenUuid();
 
 const uuid = '2358e803-12d4-4741-8432-63e9137bd39b';
 

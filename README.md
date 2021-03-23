@@ -26,7 +26,7 @@ npm install shorten-uuid
 ```
 
 ```js
-import uuidShorten from 'shorten-uuid';
+import shortenUuid from 'shorten-uuid';
 ```
 
 ### Browser
@@ -41,7 +41,7 @@ Direct `<script>` include
 
 ```js
 const characters = '-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz' // default value
-const { encode, decode } = shortenUUID(characters);
+const { encode, decode } = shortenUuid(characters);
 
 const uuid = '2358e803-12d4-4741-8432-63e9137bd39b';
 const encoded = encode(uuid); // -> 1CNDV20AJ3S07Fm5Ed0CvCDQ
