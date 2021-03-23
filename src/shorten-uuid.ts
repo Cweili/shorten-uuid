@@ -37,20 +37,16 @@ export default function uuidShorten(
     decode(shortString: string) {
       const arr: string[] = [];
       for (let i = 0; i < 8; i++) {
+        if (i > 1 && i < 6) {
+          arr.push('-');
+        }
         arr.push(
           decode64ToInt(
             shortString.substr(i * 3, 3),
           ).toString(16).padStart(4, '0'),
         );
       }
-      const dashed = arr.join('');
-      return [
-        dashed.substr(0, 8),
-        dashed.substr(8, 4),
-        dashed.substr(12, 4),
-        dashed.substr(16, 4),
-        dashed.substr(20),
-      ].join('-');
+      return arr.join('');
     },
 
     encodeIntTo64,
