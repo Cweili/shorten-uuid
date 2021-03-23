@@ -1,6 +1,6 @@
 {
   "name": "shorten-uuid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shorten UUID to a string of length 24 witch applicable to the URL and WeChat QR code.",
   "keywords": [
     "id",
