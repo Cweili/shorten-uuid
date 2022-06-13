@@ -46,7 +46,7 @@
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^25.3.0",
-    "jest": "^27.4.5",
+    "jest": "^28.1.1",
     "microbundle": "^0.14.2"
   }
 }
