@@ -47,6 +47,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^26.5.3",
     "jest": "^28.1.1",
-    "microbundle": "^0.14.2"
+    "microbundle": "^0.15.0"
   }
 }
