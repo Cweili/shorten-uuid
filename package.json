@@ -1,6 +1,6 @@
 {
   "name": "shorten-uuid",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Shorten UUID to a string of length 24 witch applicable to the URL and WeChat QR code.",
   "keywords": [
     "id",
@@ -33,20 +33,19 @@
   "scripts": {
     "prebuild": "eslint --fix \"{src,test}/*.{j,t}s\"",
     "build": "microbundle -i src/shorten-uuid.ts",
-    "test": "jest test --coverage"
+    "test": "c8 --reporter=lcov --reporter=text node  --test test/shorten-uuid.test.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/eslint-parser": "^7.13.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-typescript": "^7.13.0",
-    "@types/jest": "^29.2.4",
+    "@types/node": "^25.0.8",
+    "c8": "^10.1.3",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^28.6.0",
-    "jest": "^29.1.2",
     "microbundle": "^0.15.0"
   }
 }

@@ -14,12 +14,12 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: 22
+          node-version: 24
 
       - run: npm install
-      - run: npm run build
-      - run: npm test -- --coverageReporters=lcov
+      - run: npm test
 
       - uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage/lcov.info
